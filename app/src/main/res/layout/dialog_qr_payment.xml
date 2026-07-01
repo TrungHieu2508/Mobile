@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Thanh toán đơn hàng"
+        android:textColor="@color/primaryGreen"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Quét mã QR dưới đây để thanh toán trực tuyến"
+        android:textColor="@color/grayMedium"
+        android:textSize="13sp" />
+
+    <!-- QR ImageView -->
+    <ImageView
+        android:id="@+id/imgQrPayment"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginVertical="16dp"
+        android:src="@drawable/app_logo" />
+
+    <!-- Details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundCream"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/txtQrBank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngân hàng: VietinBank"
+            android:textColor="@color/grayDark"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtQrAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Số tài khoản: 109876543210"
+            android:textColor="@color/grayDark"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtQrAccountHolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Chủ tài khoản: CÔNG TY MATCHA VIBE"
+            android:textColor="@color/grayDark"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtQrAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Số tiền: 90.000 đ"
+            android:textColor="@color/primaryBrown"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtQrContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Nội dung chuyển khoản: MV12345"
+            android:textColor="@color/primaryGreenDark"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelPayment"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:textColor="@color/grayMedium" />
+
+        <Button
+            android:id="@+id/btnConfirmPaid"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primaryGreen"
+            android:text="Đã chuyển khoản"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
