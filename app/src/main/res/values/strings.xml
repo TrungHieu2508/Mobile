@@ -1,3 +1,192 @@
 <resources>
     <string name="app_name">Matcha_Vibe</string>
+    <string name="login_title">Đăng Nhập</string>
+    <string name="login_welcome">Chào mừng bạn quay lại với Matcha Vibe</string>
+    <string name="email_label">Email</string>
+    <string name="email_hint">Nhập email của bạn</string>
+    <string name="password_label">Mật khẩu</string>
+    <string name="password_hint">Nhập mật khẩu</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="btn_login">ĐĂNG NHẬP</string>
+    <string name="go_to_register">Chưa có tài khoản? Đăng ký ngay</string>
+    <string name="logging_in">ĐANG ĐĂNG NHẬP&#8230;</string>
+    <string name="err_empty_fields">Vui lòng điền đầy đủ thông tin</string>
+    <string name="login_success">Đăng nhập thành công!</string>
+    <string name="login_failure">Đăng nhập thất bại: %1$s</string>
+    <string name="forgot_password_title">Khôi phục mật khẩu</string>
+    <string name="forgot_password_message">Vui lòng liên hệ Admin qua số hotline 0948373374 để được hỗ trợ cấp lại mật khẩu.</string>
+    <string name="call_now">Gọi ngay</string>
+    <string name="close">Đóng</string>
+
+    <!-- Home Fragment -->
+    <string name="matcha_vibe">Matcha Vibe</string>
+    <string name="hello_user">Xin chào, Bạn!</string>
+    <string name="search_hint">Tìm kiếm tên nước uống&#8230;</string>
+    <string name="menu_title">Menu</string>
+    <string name="view_all">Xem tất cả</string>
+    <string name="store_system">Hệ Thống Cơ Sở Cửa Hàng</string>
+
+    <!-- Profile Fragment -->
+    <string name="profile_title">Quản lý thông tin cá nhân</string>
+    <string name="active_status">Hoạt động</string>
+    <string name="not_updated">Chưa cập nhật</string>
+    <string name="customer_role">CUSTOMER</string>
+    <string name="default_email">example@gmail.com</string>
+    <string name="update_info">Cập Nhật Thông Tin</string>
+    <string name="name_hint">Nhập họ tên của bạn</string>
+    <string name="phone_hint">Nhập số điện thoại của bạn</string>
+    <string name="email_address_hint">Địa chỉ Email</string>
+    <string name="confirm_update">Xác nhận cập nhật</string>
+    <string name="change_password">Đổi mật khẩu tài khoản</string>
+    <string name="admin_page">TRANG QUẢN TRỊ (ADMIN)</string>
+    <string name="staff_page">TRANG NHÂN VIÊN (STAFF)</string>
+    <string name="promo_gift_title">Mã khuyến mãi dành cho bạn 🎁</string>
+    <string name="logout">ĐĂNG XUẤT TÀI KHOẢN</string>
+
+    <!-- Register Activity -->
+    <string name="register_title">Đăng Ký Tài Khoản</string>
+    <string name="register_welcome">Nhập thông tin để thưởng thức Matcha &amp; Coffee</string>
+    <string name="full_name_label">Họ và Tên</string>
+    <string name="full_name_hint">Nhập họ và tên</string>
+    <string name="phone_label">Số điện thoại</string>
+    <string name="phone_reg_hint">Nhập số điện thoại</string>
+    <string name="password_reg_hint">Nhập mật khẩu (từ 8 ký tự, có chữ và số)</string>
+    <string name="btn_register">ĐĂNG KÝ NGAY</string>
+    <string name="go_to_login">Đã có tài khoản? Đăng nhập ngay</string>
+    <string name="registering">ĐANG ĐĂNG KÝ&#8230;</string>
+    <string name="register_success">Đăng ký thành công!</string>
+    <string name="register_failure">Đăng ký thất bại: %1$s</string>
+
+    <!-- Validation messages -->
+    <string name="err_name_two_words">Họ và tên phải bao gồm ít nhất 2 từ</string>
+    <string name="err_invalid_phone">Số điện thoại không đúng định dạng Việt Nam</string>
+    <string name="err_invalid_gmail">Email phải có định dạng @gmail.com</string>
+    <string name="err_password_strength">Mật khẩu phải từ 8 ký tự, bao gồm cả chữ và số</string>
+
+    <!-- Admin Activity -->
+    <string name="admin_title">QUẢN TRỊ VIÊN</string>
+    <string name="admin_stats_title">Thống kê doanh thu &amp; đơn hàng</string>
+    <string name="total_revenue">Tổng doanh thu</string>
+    <string name="zero_vnd">0 đ</string>
+    <string name="order_count_label">Số đơn hàng</string>
+    <string name="zero_orders">0 đơn</string>
+    <string name="revenue_chart">Biểu đồ doanh thu</string>
+    <string name="day">Ngày</string>
+    <string name="month">Tháng</string>
+    <string name="year">Năm</string>
+    <string name="admin_tools_title">Công cụ quản lý hệ thống</string>
+    <string name="products">Sản phẩm</string>
+    <string name="stores">Cơ sở cửa hàng</string>
+    <string name="promos">Mã Khuyến mãi</string>
+    <string name="users_staff">Khách &amp; Nhân viên</string>
+    <string name="order_monitor">Giám sát Đơn hàng</string>
+    <string name="drink_categories">Danh mục nước</string>
+    <string name="banner_management">Quản lý Banner</string>
+    <string name="product_mgmt_title">SẢN PHẨM</string>
+    <string name="product_mgmt_sub">Thêm mới và cập nhật thông tin đồ uống</string>
+    <string name="add_product_title">Thêm sản phẩm mới</string>
+    <string name="drink_name_hint">Tên nước uống</string>
+    <string name="price_hint">Đơn giá (VND)</string>
+    <string name="stock_hint">Số lượng hàng trong kho</string>
+    <string name="desc_hint">Mô tả sản phẩm</string>
+    <string name="select_product_img">CHỌN ẢNH SẢN PHẨM</string>
+    <string name="no_img_selected">Chưa chọn ảnh</string>
+    <string name="save_product">LƯU SẢN PHẨM</string>
+    <string name="current_products_list">Danh sách sản phẩm hiện tại</string>
+    <string name="store_mgmt_title">CƠ SỞ CỬA HÀNG</string>
+    <string name="store_mgmt_sub">Quản lý địa chỉ và vị trí các chi nhánh</string>
+    <string name="add_store_title">Thêm cơ sở cửa hàng</string>
+    <string name="store_name_hint">Tên cơ sở (Ví dụ: Matcha Vibe Nguyễn Trãi)</string>
+    <string name="store_addr_hint">Địa chỉ (VD: 123 Nguyễn Trãi, Q1, HCM)</string>
+    <string name="get_coords">Tìm tọa độ từ địa chỉ trên</string>
+    <string name="lat_hint">Vĩ độ (Lat)</string>
+    <string name="lng_hint">Kinh độ (Lng)</string>
+    <string name="save_store">LƯU CƠ SỞ</string>
+    <string name="current_stores_list">Các cơ sở hiện có</string>
+    <string name="promo_mgmt_title">MÃ KHUYẾN MÃI</string>
+    <string name="promo_mgmt_sub">Tạo mã giảm giá và chương trình ưu đãi</string>
+    <string name="add_promo_title">Tạo mã khuyến mãi mới</string>
+    <string name="promo_code_hint">Mã (Ví dụ: MATCHA20)</string>
+    <string name="promo_pct_hint">Phần trăm giảm (Ví dụ: 20)</string>
+    <string name="promo_min_hint">Giá trị đơn hàng tối thiểu (Ví dụ: 50000)</string>
+    <string name="save_promo">LƯU MÃ KHUYẾN MÃI</string>
+    <string name="active_promos">Mã đang hoạt động</string>
+    <string name="user_staff_mgmt_title">NHÂN VIÊN &amp; KHÁCH HÀNG</string>
+    <string name="user_staff_mgmt_sub">Quản lý danh sách và cấp quyền người dùng</string>
+    <string name="role_filter">Phân loại vai trò</string>
+    <string name="role_filter_hint">Bấm vào vòng tròn để chọn vai trò, bấm danh sách bên dưới để nâng/hạ quyền</string>
+    <string name="admin">Admin</string>
+    <string name="staff">Nhân Viên</string>
+    <string name="customer">Khách Hàng</string>
+    <string name="order_monitor_title">GIÁM SÁT ĐƠN HÀNG</string>
+    <string name="order_monitor_sub">Xem lịch sử giao dịch và trạng thái đơn hàng</string>
+    <string name="order_history_title">Lịch sử giao dịch &amp; đơn hàng</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="delete_selected">Xóa đã chọn</string>
+    <string name="cat_mgmt_title">DANH MỤC ĐỒ UỐNG</string>
+    <string name="cat_mgmt_sub">Phân loại các nhóm đồ uống trong thực đơn</string>
+    <string name="add_cat_title">Thêm danh mục mới</string>
+    <string name="cat_name_hint">Tên danh mục (Ví dụ: Trà sữa, Đá xay&#8230;)</string>
+    <string name="save_cat">LƯU DANH MỤC</string>
+    <string name="current_cats_list">Các danh mục hiện có</string>
+    <string name="banner_mgmt_title">BANNER QUẢNG CÁO</string>
+    <string name="banner_mgmt_sub">Cập nhật hình ảnh banner nổi bật trang chủ</string>
+    <string name="add_banner_title">Thêm banner quảng cáo mới</string>
+    <string name="banner_content_hint">Nội dung/Tiêu đề quảng cáo</string>
+    <string name="select_banner_img">CHỌN ẢNH BANNER</string>
+    <string name="save_banner">LƯU BANNER</string>
+    <string name="current_banners_list">Các banner quảng cáo hiện tại</string>
+
+    <!-- Item Product -->
+    <string name="out_of_stock">HẾT HÀNG</string>
+    <string name="sample_product_name">Matcha Latte</string>
+    <string name="sample_product_desc">Thơm ngon mát lạnh từ tinh bột trà xanh nguyên chất</string>
+    <string name="sample_product_price">45.000 đ</string>
+
+    <!-- Cart Fragment -->
+    <string name="cart_title">Giỏ Hàng</string>
+    <string name="cart_sub">Xác nhận và đặt món nước</string>
+    <string name="cart_empty">Giỏ hàng trống. Hãy thêm món nước yêu thích của bạn!</string>
+    <string name="delivery_type">Hình thức nhận hàng</string>
+    <string name="home_delivery">Giao tận nhà</string>
+    <string name="at_store">Đặt tại quán</string>
+    <string name="delivery_store">Cơ sở giao hàng</string>
+    <string name="delivery_info">Thông tin giao hàng</string>
+    <string name="receiver_name_hint">Tên người nhận</string>
+    <string name="phone_receiver_hint">Số điện thoại</string>
+    <string name="detailed_address_hint">Địa chỉ giao nước chi tiết</string>
+    <string name="position">Vị trí</string>
+    <string name="delivery_note">*Lưu ý: Giao hàng tận nhà bắt buộc thanh toán trực tuyến qua mã QR.</string>
+    <string name="scan_table_qr">Quét mã QR bàn nước</string>
+    <string name="scan_camera">Quét Camera</string>
+    <string name="table_not_identified">Chưa xác định bàn ăn!</string>
+    <string name="table_scan_hint">Vui lòng quét QR dán trên bàn hoặc chọn giả lập để tiếp tục.</string>
+    <string name="table_address_label">Địa chỉ tại bàn:</string>
+    <string name="store_table_hint">Tên cửa hàng - Số bàn</string>
+    <string name="payment_method">Phương thức thanh toán</string>
+    <string name="qr_payment">Chuyển khoản QR</string>
+    <string name="cash_payment">Tiền mặt tại quầy</string>
+    <string name="promo_code_label">Mã khuyến mãi</string>
+    <string name="apply_promo_hint">Nhập mã ưu đãi (ví dụ: MATCHA20)</string>
+    <string name="apply_btn">Áp dụng</string>
+    <string name="subtotal">Tạm tính:</string>
+    <string name="discount_label">Mã giảm giá:</string>
+    <string name="zero_vnd_minus">- 0 đ</string>
+    <string name="shipping_fee">Phí vận chuyển:</string>
+    <string name="distance_label">Khoảng cách: 0 km</string>
+    <string name="total_payment">Tổng tiền thanh toán:</string>
+    <string name="order_now">ĐẶT HÀNG NGAY</string>
+
+    <!-- Orders Fragment -->
+    <string name="orders_history_title">Lịch Sử Đơn</string>
+    <string name="orders_history_sub">Theo dõi trạng thái đơn hàng</string>
+    <string name="no_orders">Bạn chưa đặt đơn hàng nào!</string>
+
+    <!-- Order Activity -->
+    <string name="matcha_vibe_menu">Matcha Vibe Menu</string>
+    <string name="zero">0</string>
+    <string name="search_drink_hint">Tìm món nước bạn muốn uống&#8230;</string>
+
+    <!-- Splash Activity -->
+    <string name="splash_sub">Matcha &amp; Cafe Premium</string>
 </resources>
