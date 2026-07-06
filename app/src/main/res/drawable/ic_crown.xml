@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Crown icon -->
+    <path
+        android:fillColor="@color/black"
+        android:pathData="M2,4 l3,12 h14 l3,-12 l-5,4 l-5,-6 l-5,6 z" />
+</vector>

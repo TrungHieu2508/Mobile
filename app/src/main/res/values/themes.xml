@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Matcha_Vibe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primaryGreen</item>
+        <item name="colorSecondary">@color/primaryBrown</item>
+        <item name="android:windowBackground">@color/backgroundCream</item>
+    </style>
+
+    <style name="Theme.Matcha_Vibe" parent="Base.Theme.Matcha_Vibe" />
+</resources>
