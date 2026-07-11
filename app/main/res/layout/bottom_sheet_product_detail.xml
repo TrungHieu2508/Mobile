@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundCream">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Handle indicator bar on top -->
+        <View
+            android:layout_width="40dp"
+            android:layout_height="4dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:background="@color/grayLight" />
+
+        <!-- Product Name & Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtDetailName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:text="Matcha Latte"
+                android:textColor="@color/primaryGreen"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDetailPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="45.000 đ"
+                android:textColor="@color/redAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDetailDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="16dp"
+            android:text="Mô tả chi tiết của món nước..."
+            android:textColor="@color/grayMedium"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/grayLight" />
+
+        <!-- Size Selection -->
+        <TextView
+            android:id="@+id/txtLabelSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn kích cỡ (Size)"
+            android:textColor="@color/primaryBrown"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbSizeS"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:button="@null"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Nhỏ (S) -5k"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbSizeM"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Vừa (M)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbSizeL"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:button="@null"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Lớn (L) +5k"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <!-- Sugar Selection -->
+        <TextView
+            android:id="@+id/txtLabelSugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn mức đường"
+            android:textColor="@color/primaryBrown"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgSugar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbSugar0"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:button="@null"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Ít ngọt (0%)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbSugar50"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:button="@null"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Vừa (50%)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbSugar100"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Chuẩn (100%)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <!-- Ice Selection -->
+        <TextView
+            android:id="@+id/txtLabelIce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn mức đá"
+            android:textColor="@color/primaryBrown"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgIce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbIce0"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:button="@null"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Không đá"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbIce50"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:button="@null"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Đá vừa (50%)"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbIce100"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/bg_option_pill_selector"
+                android:textColor="@color/color_option_text_selector"
+                android:gravity="center"
+                android:text="Đá chuẩn"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <!-- Ghi chú thêm -->
+        <TextView
+            android:id="@+id/txtLabelNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yêu cầu khác cho quán"
+            android:textColor="@color/primaryBrown"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtSpecialNote"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_rounded_input"
+            android:hint="Ví dụ: Ít đá, nhiều matcha..."
+            android:inputType="text"
+            android:paddingHorizontal="12dp"
+            android:textColor="@color/grayDark"
+            android:textSize="13sp" />
+
+        <!-- Quantity & Add to Cart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Quantity Adjuster -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_rounded_input"
+                android:paddingHorizontal="6dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQtyMinus"
+                    style="@style/Widget.Material3.Button.UnelevatedButton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp"
+                    android:padding="0dp"
+                    android:text="-"
+                    android:textColor="@color/primaryGreen"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/primaryGreenLightest"
+                    app:cornerRadius="16dp" />
+
+                <TextView
+                    android:id="@+id/txtQtyCount"
+                    android:layout_width="32dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/primaryBrown"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnQtyPlus"
+                    style="@style/Widget.Material3.Button.UnelevatedButton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:insetLeft="0dp"
+                    android:insetRight="0dp"
+                    android:padding="0dp"
+                    android:text="+"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/primaryGreen"
+                    app:cornerRadius="16dp" />
+            </LinearLayout>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btnSubmitAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:backgroundTint="@color/primaryGreen"
+                android:text="THÊM VÀO GIỎ"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="22dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
