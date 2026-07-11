@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundCream"
+    android:padding="24dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/app_logo"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/register_title"
+                android:textColor="@color/primaryGreen"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/register_welcome"
+                android:textColor="@color/grayMedium"
+                android:textSize="14sp" />
+
+            <!-- Họ và Tên -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/full_name_label"
+                android:textColor="@color/primaryBrown"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="@string/full_name_hint"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/grayDark"
+                android:textSize="15sp"
+                android:autofillHints="name" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_label"
+                android:textColor="@color/primaryBrown"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/grayDark"
+                android:textSize="15sp"
+                android:autofillHints="emailAddress" />
+
+            <!-- Số điện thoại -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_label"
+                android:textColor="@color/primaryBrown"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="@string/phone_reg_hint"
+                android:inputType="phone"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/grayDark"
+                android:textSize="15sp"
+                android:autofillHints="phone" />
+
+            <!-- Mật khẩu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_label"
+                android:textColor="@color/primaryBrown"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_rounded_input"
+                android:hint="@string/password_reg_hint"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/grayDark"
+                android:textSize="15sp"
+                android:autofillHints="password" />
+
+            <!-- Button Register -->
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:backgroundTint="@color/primaryGreen"
+                android:background="@drawable/bg_button_green"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/btn_register"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="24dp" />
+
+            <!-- Back to  -->
+            <TextView
+                android:id="@+id/txtGoToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:text="@string/go_to_login"
+                android:textColor="@color/primaryBrown"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
