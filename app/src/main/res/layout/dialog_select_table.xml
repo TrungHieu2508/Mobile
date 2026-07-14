@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Giả lập quét QR Bàn"
+        android:textColor="@color/primaryBrown"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Chọn một bàn để mô phỏng hành vi quét mã QR dán tại bàn"
+        android:textColor="@color/grayMedium"
+        android:textSize="12sp" />
+
+    <!-- Table Selection spinner -->
+    <Spinner
+        android:id="@+id/spnTablesSimulate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginVertical="16dp"
+        android:background="@drawable/bg_rounded_input"
+        android:paddingHorizontal="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancelTableSimulate"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:text="Hủy"
+            android:textColor="@color/grayMedium" />
+
+        <Button
+            android:id="@+id/btnConfirmTableSimulate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primaryBrown"
+            android:text="Xác nhận quét"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

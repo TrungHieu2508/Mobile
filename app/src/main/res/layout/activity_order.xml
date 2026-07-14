@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundCream">
+
+    <!-- Curved Header Banner -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutOrderHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_profile_gradient_header"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:id="@+id/btnOrderBack"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@android:drawable/ic_menu_revert"
+                app:tint="@color/white"
+                android:contentDescription="@null"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/txtOrderLogoName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/matcha_vibe_menu"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/btnOrderBack"
+                app:layout_constraintEnd_toStartOf="@id/btnOrderCart"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <!-- Shopping Cart Icon with Badge -->
+            <FrameLayout
+                android:id="@+id/btnOrderCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_cart"
+                        app:tint="@color/white"
+                        android:contentDescription="@null" />
+
+                <!-- Red Circle Badge -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardCartBadge"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="top|end"
+                    app:cardBackgroundColor="@color/redAccent"
+                    app:cardCornerRadius="9dp"
+                    app:cardElevation="0dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txtCartBadgeCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/zero"
+                        android:textColor="@color/white"
+                        android:textSize="9sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Search Input -->
+    <EditText
+        android:id="@+id/edtOrderSearch"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_rounded_input"
+        android:hint="@string/search_drink_hint"
+        android:paddingHorizontal="16dp"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:inputType="text"
+        android:maxLines="1"
+        android:autofillHints="none"
+        app:layout_constraintTop_toBottomOf="@id/layoutOrderHeader" />
+
+    <!-- Categories Tabs (Horizontal list) -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrderCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        app:layout_constraintTop_toBottomOf="@id/edtOrderSearch" />
+
+    <!-- Product Grid View -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrderProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rvOrderCategories"
+        tools:listitem="@layout/item_product" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

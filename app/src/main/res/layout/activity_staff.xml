@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundCream">
+
+    <!-- Top Staff Header with Curved Green Gradient -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutStaffHeader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_profile_gradient_header"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingHorizontal="20dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <!-- Logo -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/staffHeaderLogoCard"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/primaryGreenLightest"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/app_logo"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Home Button (Về mua hàng) -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnStaffBackToClient"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="1dp"
+                app:cardBackgroundColor="@color/primaryGreenLightest"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_home"
+                    app:tint="@color/primaryGreen" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Text Title & Subtitle -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                app:layout_constraintStart_toEndOf="@id/staffHeaderLogoCard"
+                app:layout_constraintEnd_toStartOf="@id/btnStaffBackToClient"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matcha Vibe"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KÊNH NHÂN VIÊN"
+                    android:textColor="#E8F3D6"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:alpha="0.9" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Tab filter selectors -->
+    <LinearLayout
+        android:id="@+id/layoutStaffTabs"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutStaffHeader">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTabPending"
+            style="@style/Widget.Material3.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:text="Đang chờ duyệt"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            app:backgroundTint="@color/primaryGreen"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTabActive"
+            style="@style/Widget.Material3.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="4dp"
+            android:layout_weight="1"
+            android:text="Đang xử lý"
+            android:textColor="@color/primaryGreen"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            app:backgroundTint="@color/white"
+            app:strokeColor="@color/primaryGreen"
+            app:strokeWidth="1dp"
+            app:cornerRadius="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTabStock"
+            style="@style/Widget.Material3.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:text="Kho hàng"
+            android:textColor="@color/primaryGreen"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:padding="0dp"
+            app:backgroundTint="@color/white"
+            app:strokeColor="@color/primaryGreen"
+            app:strokeWidth="1dp"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+    <!-- Content Area -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStaffOrders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:paddingHorizontal="16dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutStaffTabs" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStaffStock"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        android:paddingHorizontal="16dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutStaffTabs" />
+
+    <TextView
+        android:id="@+id/txtStaffNoOrders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Không có đơn hàng nào cần xử lý!"
+        android:textColor="@color/grayMedium"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layoutStaffTabs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

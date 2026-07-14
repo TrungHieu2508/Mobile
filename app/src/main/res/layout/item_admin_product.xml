@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="6dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Image and Info Section -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardImgWrapper"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgAdminProd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/app_logo" />
+
+                <!-- Ribbon Hết hàng Admin -->
+                <FrameLayout
+                    android:id="@+id/txtAdminOutOfStockOverlay"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="top|end"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:background="@color/redAccent"
+                        android:gravity="center"
+                        android:rotation="45"
+                        android:text="HẾT"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        android:textStyle="bold"
+                        android:translationX="12dp"
+                        android:translationY="-12dp" />
+                </FrameLayout>
+            </FrameLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtAdminProdName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Tên sản phẩm"
+            android:textColor="@color/primaryGreen"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardImgWrapper"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAdminProdCatPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:text="Danh mục: Matcha - Giá: 0 đ"
+            android:textColor="@color/primaryBrown"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardImgWrapper"
+            app:layout_constraintTop_toBottomOf="@id/txtAdminProdName" />
+
+        <TextView
+            android:id="@+id/txtAdminProdDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Mô tả sản phẩm sẽ hiển thị ở đây..."
+            android:textColor="@color/grayMedium"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cardImgWrapper"
+            app:layout_constraintTop_toBottomOf="@id/txtAdminProdCatPrice" />
+
+        <!-- Divider -->
+        <View
+            android:id="@+id/divAdminProd"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/grayLight"
+            app:layout_constraintTop_toBottomOf="@id/txtAdminProdDesc"
+            app:layout_goneMarginTop="12dp" />
+
+        <!-- Buttons Section at the Bottom -->
+        <LinearLayout
+            android:id="@+id/layoutAdminProdButtons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/divAdminProd">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEditProd"
+                style="@style/Widget.Material3.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:text="Sửa"
+                android:textColor="@color/black"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="18dp"
+                app:icon="@drawable/ic_edit"
+                app:iconSize="14dp"
+                app:iconTint="@color/black"
+                app:backgroundTint="@color/primaryGreenLightest" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDeleteProd"
+                style="@style/Widget.Material3.Button.UnelevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="Xóa"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                app:cornerRadius="18dp"
+                app:icon="@drawable/ic_delete"
+                app:iconSize="14dp"
+                app:iconTint="@color/white"
+                app:backgroundTint="@color/redAccent" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

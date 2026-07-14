@@ -2,4 +2,32 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    
+    <!-- Matcha Vibe Color Palette -->
+    <color name="primaryGreen">#4E6C50</color>
+    <color name="primaryGreenDark">#3F5740</color>
+    <color name="primaryGreenLight">#AAC8A7</color>
+    <color name="primaryGreenLightest">#E8F3D6</color>
+    
+    <color name="primaryBrown">#3E2723</color>
+    <color name="primaryBrownDark">#271410</color>
+    <color name="primaryBrownLight">#8D6E63</color>
+    <color name="accentColor">#DDB892</color>
+    
+    <color name="backgroundCream">#FAF8F5</color>
+    <color name="grayLight">#EEEEEE</color>
+    <color name="grayMedium">#9E9E9E</color>
+    <color name="grayDark">#424242</color>
+    <color name="redAccent">#C94A4A</color>
+    <color name="redLight">#FFEBEE</color>
+    <color name="greenAccent">#43A047</color>
+    
+    <!-- Profile Redesign Colors -->
+    <color name="profileHeaderStart">#4E6C50</color>
+    <color name="profileHeaderEnd">#3F5740</color>
+    <color name="profileStatusBg">#E2F5EE</color>
+    <color name="profileStatusText">#1BC48F</color>
+    <color name="profileButtonColor">#4E6C50</color>
+    <color name="profileAvatarBorder">#AAC8A7</color>
+    <color name="profileInputStroke">#DDE3EA</color>
 </resources>
